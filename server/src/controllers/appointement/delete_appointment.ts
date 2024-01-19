@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { appointments } from "../../lib/data";
 
-export const deleteAssignment = (req: Request, res: Response) => {
+export const deleteAppointment = (req: Request, res: Response) => {
   const appointmentIndex = appointments.findIndex(
     (a) => a.id === parseInt(req.params.id)
   );

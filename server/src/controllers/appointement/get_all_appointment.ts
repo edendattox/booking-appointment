@@ -1,6 +1,6 @@
 import { appointments } from "../../lib/data";
 
-export const getAllAssignments = (req: Request, res: Response) => {
+export const getAllAppointment = (req: Request, res: Response) => {
   // @ts-ignore
   res.json(appointments);
 };

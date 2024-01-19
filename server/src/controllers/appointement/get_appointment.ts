@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { appointments } from "../../lib/data";
 
-export const getAssignment = (req: Request, res: Response) => {
+export const getAppointment = (req: Request, res: Response) => {
   const appointment = appointments.find(
     (a) => a.id === parseInt(req.params.id)
   );

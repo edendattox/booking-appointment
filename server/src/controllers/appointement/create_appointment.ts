@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { appointments } from "../../lib/data";
 
-export const createAssignment = (req: Request, res: Response) => {
+export const createAppointment = (req: Request, res: Response) => {
   const { time, name } = req.body;
 
   if (!time || !name) {
